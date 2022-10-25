@@ -20,8 +20,8 @@
   <div class="bg"></div>
   <nav class="container">
     <div class="navbar">
-      <a class="home" href="/">
-        <img src="/img/logo.svg">
+      <a class="home" href="/" aria-label="Prism Launcher">
+        <img src="/img/logo.svg" alt="Prism Launcher logo" />
       </a>
       <ul class="main-menu">
         <li class="nav-item">
@@ -40,10 +40,10 @@
     </div>
     <div class="links">
       <div class="social-links">
-        <a href="https://discord.gg/prismlauncher" target="_blank"><i class="fa fa-discord"></i></a>
-        <a href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank"><i class="fa fa-matrix-org"></i></a>
-        <a href="https://www.reddit.com/r/PrismLauncher/" target="_blank"><i class="fa fa-reddit"></i></a>
-        <a href="https://github.com/PrismLauncher/PrismLauncher" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://discord.gg/prismlauncher" target="_blank" aria-label="Discord"><i class="fa fa-discord"></i></a>
+        <a href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank" aria-label="Matrix"><i class="fa fa-matrix-org"></i></a>
+        <a href="https://www.reddit.com/r/PrismLauncher/" target="_blank" aria-label="Reddit"><i class="fa fa-reddit"></i></a>
+        <a href="https://github.com/PrismLauncher/PrismLauncher" target="_blank" aria-label="GitHub"><i class="fa fa-github"></i></a>
       </div>
       <div>
         <a class="button" href="/download/">Download</a>
@@ -75,12 +75,19 @@
 <p>Once found, click <strong>mirror</strong>. Now click the <strong>download</strong> button to download your OptiFine jar file.</p>
 <p>Execute the OptiFine jar file and change the selected folder location if required, then hit the <strong>&quot;Extract&quot;</strong> button and save the jarmod file somewhere you'll remember.</p>
 <p>Now in Prism Launcher edit the instance you wish to install OptiFine on, open the <strong>Version</strong> tab and click <strong>Add to Minecraft.jar</strong>, select the extracted OptiFine jarmod (the file ending in _MOD.jar) and confirm.</p>
-<p>OptiFine will now be installed as a jarmod in that instance so you can remove the installer and extracted jarmod.</p>
+<p>OptiFine will now be installed as a jarmod in that instance, so you can remove the installer and extracted jarmod.</p>
+<p>From OptiFine Version <strong>H1_pre2</strong> the instructions for installing OptiFine on Prism Launcher have changed. Make sure to have the version of Minecraft that you wish to install OptiFine on installed through the vanilla launcher.</p>
+<ol>
+<li>Extract the MOD jar with the OptiFine installer</li>
+<li>Open it with any archiver</li>
+<li>Move all files from the folder called <strong>notch</strong> to the top folder of the archive file and click <strong>save</strong>.</li>
+<li>Open Prism Launcher, edit the instance you wish to install OptiFine on, open the <strong>Version</strong> tab and click <strong>Add to Minecraft.jar</strong>, select the extracted / modified OptiFine jarmod (the file ending in _MOD.jar) and confirm.</li>
+</ol>
 <h2 id="installing-optifine-on-top-of-a-modloader" tabindex="-1"><img src="https://www.optifine.net/favicon.ico" height="20" /> Installing OptiFine on top of a modloader <a class="direct-link" href="#installing-optifine-on-top-of-a-modloader" aria-hidden="true">#</a></h2>
 <p>Make sure you know how to <a href="../download-mods">download mods</a> before attempting to install OptiFine.</p>
 <p>Go to <a href="https://optifine.net/downloads">https://optifine.net/downloads</a> and find your respective Minecraft version (eg. 1.18.2).</p>
 <p>Once found, click <strong>mirror</strong>. Now click the <strong>download</strong> button to download your OptiFine jar file.</p>
-<p>Remember where you have kept your <strong>.jar</strong> file, and continue to the Prism Launcher launcher. Follow the steps from the <a href="../download-mods">download mods</a> page, and choose either Forge or Fabric.</p>
+<p>Remember where you have kept your <strong>.jar</strong> file, and continue to Prism Launcher. Follow the steps from the <a href="../download-mods">download mods</a> page, and choose either Forge or Fabric.</p>
 <h3 id="forge" tabindex="-1"><img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge <a class="direct-link" href="#forge" aria-hidden="true">#</a></h3>
 <p>Forge does not require any extra steps besides adding the <strong>.jar</strong> for OptiFine into Prism Launcher.</p>
 <p><strong>NOTE:</strong> Some versions of OptiFine <strong>don't</strong> work on Forge!</p>
@@ -142,10 +149,11 @@
   <div class="footer">
     <div class="container">
         <a href="https://github.com/PrismLauncher/prismlauncher.github.io/edit/master/./src/wiki/getting-started/installing-optifine.md" class="elv-externalexempt button type-link size-small">Edit this page</a>
-        © 2021-2022 Prism Launcher Contributors
+        © 2022 Prism Launcher Contributors
         </h1>
     </div>
 </div>
+
 </footer>
 
   </body>

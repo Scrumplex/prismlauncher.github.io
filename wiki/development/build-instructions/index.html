@@ -20,8 +20,8 @@
   <div class="bg"></div>
   <nav class="container">
     <div class="navbar">
-      <a class="home" href="/">
-        <img src="/img/logo.svg">
+      <a class="home" href="/" aria-label="Prism Launcher">
+        <img src="/img/logo.svg" alt="Prism Launcher logo" />
       </a>
       <ul class="main-menu">
         <li class="nav-item">
@@ -40,10 +40,10 @@
     </div>
     <div class="links">
       <div class="social-links">
-        <a href="https://discord.gg/prismlauncher" target="_blank"><i class="fa fa-discord"></i></a>
-        <a href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank"><i class="fa fa-matrix-org"></i></a>
-        <a href="https://www.reddit.com/r/PrismLauncher/" target="_blank"><i class="fa fa-reddit"></i></a>
-        <a href="https://github.com/PrismLauncher/PrismLauncher" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://discord.gg/prismlauncher" target="_blank" aria-label="Discord"><i class="fa fa-discord"></i></a>
+        <a href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank" aria-label="Matrix"><i class="fa fa-matrix-org"></i></a>
+        <a href="https://www.reddit.com/r/PrismLauncher/" target="_blank" aria-label="Reddit"><i class="fa fa-reddit"></i></a>
+        <a href="https://github.com/PrismLauncher/PrismLauncher" target="_blank" aria-label="GitHub"><i class="fa fa-github"></i></a>
       </div>
       <div>
         <a class="button" href="/download/">Download</a>
@@ -106,9 +106,9 @@
 <p>The .deb will be located in the directory the repo was cloned in.</p>
 <h3 id="building-an-.rpm" tabindex="-1">Building an .rpm <a class="direct-link" href="#building-an-.rpm" aria-hidden="true">#</a></h3>
 <p>Build dependencies are automatically installed using <code>DNF</code>, however, you will also need the <code>rpmdevtools</code> package (on Fedora),<br>
-in order to fetch sources and setup your tree.<br>
+in order to fetch sources and set up your tree.<br>
 You don't need to clone the repo for this; the spec file handles that.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~<br><span class="token comment"># setup your ~/rpmbuild directory, required for rpmbuild to work.</span><br>rpmdev-setuptree<br><span class="token comment"># get the rpm spec file from the prismlauncher-misc repo</span><br><span class="token function">wget</span> https://copr-dist-git.fedorainfracloud.org/cgit/sentry/prismlauncher/prismlauncher.git/plain/prismlauncher.spec<br><span class="token comment"># install build dependencies</span><br><span class="token function">sudo</span> dnf builddep prismlauncher.spec<br><span class="token comment"># download build sources</span><br>spectool -g -R prismlauncher.spec<br><span class="token comment"># now build!</span><br>rpmbuild -bb prismlauncher.spec</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~<br><span class="token comment"># setup your ~/rpmbuild directory, required for rpmbuild to work.</span><br>rpmdev-setuptree<br><span class="token comment"># get the rpm spec file from the prismlauncher-rpm repo</span><br><span class="token function">git</span> clone https://pagure.io/prismlauncher-rpm.git<br><span class="token builtin class-name">cd</span> prismlauncher-rpm<br><span class="token comment"># install build dependencies</span><br><span class="token function">sudo</span> dnf builddep prismlauncher.spec<br><span class="token function">sudo</span> dnf builddep -D <span class="token string">"_without_qt6 1"</span> prismlauncher.spec <span class="token comment"># if you want to use Qt 5 instead of Qt 6</span><br><span class="token comment"># download build sources</span><br>spectool -g -R prismlauncher.spec<br><span class="token comment"># move patch to rpmbuild sources directory</span><br><span class="token function">cp</span> change-jars-path.patch ~/rpmbuild/SOURCES <br><span class="token comment"># now build!</span><br>rpmbuild -bb prismlauncher.spec<br>rpmbuild -bb --without qt6 prismlauncher.spec <span class="token comment"># if you want to use Qt 5 instead of Qt 6</span></code></pre>
 <p>The path to the .rpm packages will be printed once the build is complete.</p>
 <h3 id="building-a-flatpak" tabindex="-1">Building a Flatpak <a class="direct-link" href="#building-a-flatpak" aria-hidden="true">#</a></h3>
 <p>You don't need to clone the entire Prism Launcher repo for this; the Flatpak file handles that.<br>
@@ -164,7 +164,7 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 </ul>
 </li>
 <li>Hit the &quot;Run CMake&quot; button.</li>
-<li>You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.</li>
+<li>You'll see warnings, and it might not be clear that it succeeded until you scroll to the bottom of the window.</li>
 <li>Hit &quot;Finish&quot; if CMake ran successfully.</li>
 </ul>
 </li>
@@ -177,7 +177,7 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 </ol>
 <p><strong>If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.</strong></p>
 <h2 id="windows" tabindex="-1">Windows <a class="direct-link" href="#windows" aria-hidden="true">#</a></h2>
-<p>We recommend using a build workflow based on MSYS2, as it's the easiest way to get all of the build dependencies.</p>
+<p>We recommend using a build workflow based on MSYS2, as it's the easiest way to get all the build dependencies.</p>
 <h3 id="dependencies" tabindex="-1">Dependencies <a class="direct-link" href="#dependencies" aria-hidden="true">#</a></h3>
 <ul>
 <li><a href="https://www.msys2.org/">MSYS2</a> - Software Distribution and Building Platform for Windows
@@ -255,8 +255,8 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 <h3 id="build" tabindex="-1">Build <a class="direct-link" href="#build" aria-hidden="true">#</a></h3>
 <p>Choose an installation path.</p>
 <p>This is where the final <code>PrismLauncher.app</code> will be constructed when you run <code>make install</code>. Supply it as the <code>CMAKE_INSTALL_PREFIX</code> argument during CMake configuration. By default, it's in the dist folder, under PrismLauncher.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> build<br><span class="token builtin class-name">cd</span> build<br>cmake <span class="token punctuation">\</span><br> -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br> -DCMAKE_INSTALL_PREFIX:<span class="token environment constant">PATH</span><span class="token operator">=</span><span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">dirname</span> <span class="token environment constant">$PWD</span><span class="token variable">)</span></span>/dist/"</span> <span class="token punctuation">\</span><br> -DCMAKE_PREFIX_PATH<span class="token operator">=</span><span class="token string">"/path/to/Qt/"</span> <span class="token punctuation">\</span><br> -DQt5_DIR<span class="token operator">=</span><span class="token string">"/path/to/Qt/"</span> <span class="token punctuation">\</span><br> -DCMAKE_OSX_DEPLOYMENT_TARGET<span class="token operator">=</span><span class="token number">10.14</span> <span class="token punctuation">\</span><br> -DLauncher_QT_VERSION_MAJOR<span class="token operator">=</span><span class="token number">6</span> <span class="token punctuation">\</span> <span class="token comment"># if you want to use Qt 6</span><br> -DENABLE_LTO<span class="token operator">=</span>ON <span class="token punctuation">\</span> <span class="token comment"># if you want to enable LTO/IPO</span><br> -DLauncher_BUILD_PLATFORM<span class="token operator">=</span>macOS<br><span class="token comment">#-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not reccomended for development)</span><br> <span class="token punctuation">..</span><br><span class="token function">make</span> <span class="token function">install</span></code></pre>
-<p>Remember to replace <code>/path/to/Qt/</code> with the actual path. For newer Qt installations, it is often in your home directory. (For the Homebrew installation, it's likely to be in <code>/opt/homebrew/opt/qt</code>.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> build<br><span class="token builtin class-name">cd</span> build<br>cmake <span class="token punctuation">\</span><br> -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br> -DCMAKE_INSTALL_PREFIX:<span class="token environment constant">PATH</span><span class="token operator">=</span><span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">dirname</span> <span class="token environment constant">$PWD</span><span class="token variable">)</span></span>/dist/"</span> <span class="token punctuation">\</span><br> -DCMAKE_PREFIX_PATH<span class="token operator">=</span><span class="token string">"/path/to/Qt/"</span> <span class="token punctuation">\</span><br> -DQt5_DIR<span class="token operator">=</span><span class="token string">"/path/to/Qt/"</span> <span class="token punctuation">\</span><br> -DCMAKE_OSX_DEPLOYMENT_TARGET<span class="token operator">=</span><span class="token number">10.14</span> <span class="token punctuation">\</span><br> -DLauncher_QT_VERSION_MAJOR<span class="token operator">=</span><span class="token number">6</span> <span class="token punctuation">\</span> <span class="token comment"># if you want to use Qt 6</span><br> -DENABLE_LTO<span class="token operator">=</span>ON <span class="token punctuation">\</span> <span class="token comment"># if you want to enable LTO/IPO</span><br> -DLauncher_BUILD_PLATFORM<span class="token operator">=</span>macOS<br><span class="token comment">#-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not recommended for development)</span><br> <span class="token punctuation">..</span><br><span class="token function">make</span> <span class="token function">install</span></code></pre>
+<p>Remember to replace <code>/path/to/Qt/</code> with the actual path. For newer Qt installations, it is often in your home directory. For the Homebrew installation, it's likely to be in <code>/opt/homebrew/opt/qt</code>.</p>
 <p><strong>Note:</strong> The final app bundle may not run due to code signing issues, which<br>
 need to be fixed with <code>codesign -fs -</code>.</p>
 <h2 id="openbsd" tabindex="-1">OpenBSD <a class="direct-link" href="#openbsd" aria-hidden="true">#</a></h2>
@@ -285,7 +285,7 @@ need to be fixed with <code>codesign -fs -</code>.</p>
 <p>You can <a href="https://ccache.dev/download.html">download it here</a>. After setting up, builds will be incremental, and the builds after the first one will be much faster.</p>
 <h3 id="vs-code" tabindex="-1">VS Code <a class="direct-link" href="#vs-code" aria-hidden="true">#</a></h3>
 <p>To set up VS Code, you can download <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools">the C/C++ extension</a>, since it provides IntelliSense auto complete, linting, formatting, and various other features.</p>
-<p>Then, you need to setup the configuration. Go into the command palette and open up C/C++: Edit Configurations (UI). There, add a new configuration for PrismLauncher.</p>
+<p>Then, you need to set up the configuration. Go into the command palette and open up C/C++: Edit Configurations (UI). There, add a new configuration for PrismLauncher.</p>
 <ol>
 <li>Add the path to your Qt <code>include</code> folder to <code>includePath</code></li>
 <li>Add <code>-L/{path to your Qt installation}/lib</code> to <code>compilerArgs</code></li>
@@ -369,10 +369,11 @@ need to be fixed with <code>codesign -fs -</code>.</p>
   <div class="footer">
     <div class="container">
         <a href="https://github.com/PrismLauncher/prismlauncher.github.io/edit/master/./src/wiki/development/build-instructions.md" class="elv-externalexempt button type-link size-small">Edit this page</a>
-        © 2021-2022 Prism Launcher Contributors
+        © 2022 Prism Launcher Contributors
         </h1>
     </div>
 </div>
+
 </footer>
 
   </body>

@@ -17,12 +17,12 @@
 		<link href="https://prismlauncher.org/news/release-5.0/"/>
 		<updated>2022-10-19T00:00:00Z</updated>
 		<id>https://prismlauncher.org/news/release-5.0/</id>
-		<content type="html">&lt;p&gt;Hi there,&lt;/p&gt;
-&lt;p&gt;we are bringing you &lt;s&gt;PolyMC&lt;/s&gt; Prism Launcher 5.0!&lt;br /&gt;
+		<content type="html">&lt;p&gt;Hi there!&lt;/p&gt;
+&lt;p&gt;We are bringing you &lt;s&gt;PolyMC&lt;/s&gt; Prism Launcher 5.0!&lt;br /&gt;
 This major release not only comes with a new versioning system, but also a new name!&lt;br /&gt;
 But why you ask?&lt;br /&gt;
 Well, stuff happened and we are going to talk about everything that went down in a future blog post.&lt;br /&gt;
-For now we want you to regain access to the best Minecraft launcher out there.&lt;/p&gt;
+For now, we want you to regain access to the best Minecraft launcher out there.&lt;/p&gt;
 &lt;p&gt;Let&#39;s go over the major changes since the last &lt;em&gt;PolyMC&lt;/em&gt; release back in September.&lt;br /&gt;
 Our macOS users on Apple M1/M2 processors as well as our Nintendo Switch Linuxers can rejoice, as you can finally run all Minecraft versions on those platforms without needing to make any changes on your end.&lt;br /&gt;
 We have to thank &lt;a href=&quot;https://github.com/r58playz/&quot;&gt;some&lt;/a&gt; &lt;a href=&quot;https://github.com/theofficialgman/&quot;&gt;community&lt;/a&gt; &lt;a href=&quot;https://github.com/ViRb3&quot;&gt;members&lt;/a&gt; as well as the folks over at &lt;a href=&quot;https://github.com/MinecraftMachina/&quot;&gt;MinecraftMachina&lt;/a&gt; for helping out with this feature!&lt;/p&gt;
@@ -114,7 +114,7 @@ With this wonderful new version you get many cool things, like bug fixes and als
 &lt;li&gt;Bump to C++17 by @Scrumplex and @LennyMcLennington in #941&lt;/li&gt;
 &lt;li&gt;Hide &#39;More news...&#39; button if the news aren&#39;t loaded yet by @flowln in #1049&lt;/li&gt;
 &lt;li&gt;Make &#39;About&#39; dialog smaller by @DioEgizio in #1107&lt;/li&gt;
-&lt;li&gt;Make Coremods / Mods seperation more clear by @Scrumplex in #1035&lt;/li&gt;
+&lt;li&gt;Make Coremods / Mods separation more clear by @Scrumplex in #1035&lt;/li&gt;
 &lt;li&gt;Update copyright notices by @DioEgizio in #1073&lt;/li&gt;
 &lt;li&gt;[macOS] Downgrade to Qt 6.3.0 by @DioEgizio in #1014&lt;/li&gt;
 &lt;/ul&gt;
@@ -155,7 +155,7 @@ This update should fix some of the issues you might have faced with 1.4.0.&lt;/p
 &lt;ul&gt;
 &lt;li&gt;Fix crash when JAR-mods are applied by @flowln in #956&lt;/li&gt;
 &lt;li&gt;Fix filter on resources pages (e.g. Mods page) by @flowln in #961&lt;/li&gt;
-&lt;li&gt;Fix variables in pre launch/post exit hooks by @Scrumplex in #952&lt;/li&gt;
+&lt;li&gt;Fix variables in pre-launch/post-exit hooks by @Scrumplex in #952&lt;/li&gt;
 &lt;li&gt;Make adding multiple accounts possible again by @flowln in #974&lt;/li&gt;
 &lt;li&gt;Resolve CurseForge mods for FTB modpacks by @flowln and @Scrumplex in #699&lt;/li&gt;
 &lt;/ul&gt;
@@ -251,7 +251,7 @@ No longer should you need to deal with wrapper commands to enable &lt;a href=&qu
 &lt;ul&gt;
 &lt;li&gt;Add support for Quilt modpacks on Technic by @kthchew in #685&lt;/li&gt;
 &lt;li&gt;[Linux] Added support for Nix 2.7 by @TheOPtimal in #286&lt;/li&gt;
-&lt;li&gt;[Windows] Add version information to setup executable by @kthchew in #679&lt;/li&gt;
+&lt;li&gt;[Windows] Add version information to the setup executable by @kthchew in #679&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://prismlauncher.org/news/release-1.3.2/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
@@ -519,7 +519,7 @@ Also check our friends&#39; launch of the Quilt Beta over at &lt;a href=&quot;ht
 		<link href="https://prismlauncher.org/news/release-1.1.1/"/>
 		<updated>2022-03-27T00:00:00Z</updated>
 		<id>https://prismlauncher.org/news/release-1.1.1/</id>
-		<content type="html">&lt;p&gt;We are pleased to annouce, that PolyMC version 1.1.1 is now available.&lt;br /&gt;
+		<content type="html">&lt;p&gt;We are pleased to announce, that PolyMC version 1.1.1 is now available.&lt;br /&gt;
 This release mainly contains bug fixes.&lt;/p&gt;
 &lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://prismlauncher.org/news/release-1.1.1/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://prismlauncher.org/news/release-1.1.1/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -564,7 +564,7 @@ This release mainly contains bug fixes.&lt;/p&gt;
 		<link href="https://prismlauncher.org/news/release-1.1.0/"/>
 		<updated>2022-03-12T00:00:00Z</updated>
 		<id>https://prismlauncher.org/news/release-1.1.0/</id>
-		<content type="html">&lt;p&gt;We are pleased to annouce, that PolyMC version 1.1.0 is now available!&lt;br /&gt;
+		<content type="html">&lt;p&gt;We are pleased to announce, that PolyMC version 1.1.0 is now available!&lt;br /&gt;
 This is a major milestone, as this marks the first release since deciding to move on from our origins as a MultiMC fork.&lt;br /&gt;
 You can &lt;a href=&quot;https://prismlauncher.org/news/moving-on&quot;&gt;read more about that here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://prismlauncher.org/news/release-1.1.0/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -640,17 +640,17 @@ All versions prior to 1.0.6 do not work anymore, as they try to reach MultiMC se
 &lt;p&gt;In an effort to prepare for our upcoming 1.1.0 release, we wanted to contact the MultiMC maintainer to see, if they want to be credited in our documentation.&lt;br /&gt;
 Sadly, our request was dismissed, and most of our team members were banned from the official MultiMC Discord server for being associated with PolyMC.&lt;/p&gt;
 &lt;img alt=&quot;Screenshot of public chat with MultiMC maintainer&quot; src=&quot;https://prismlauncher.org/img/news/moving-on/discord.png&quot; style=&quot;width: 40em&quot; /&gt;
-&lt;p&gt;This has sparked many internal discussions both at PolyMC as well as MultiMC.&lt;br /&gt;
+&lt;p&gt;This has sparked many internal discussions both at PolyMC and MultiMC.&lt;br /&gt;
 In the end, we concluded that we will be moving on from our origins as a packaging-friendly fork of MultiMC.&lt;/p&gt;
 &lt;p&gt;In our upcoming 1.1.0 release, you will be able to use new features that will differentiate PolyMC from MultiMC.&lt;br /&gt;
 The major new feature is the integrated mod downloader that supports Modrinth and CurseForge mods.&lt;br /&gt;
 We also plan to clean the codebase, remove obscure or old features and cruft in an effort to make it easier for new contributors to start working on PolyMC.&lt;/p&gt;
 &lt;p&gt;Additionally, we have reorganized PolyMC since its inception to be more community-centric.&lt;br /&gt;
-One of the founders has stepped down as a maintainer and we have formed the &lt;em&gt;PolyMC Core Team&lt;/em&gt;.&lt;br /&gt;
+One of the founders has stepped down as a maintainer, and we have formed the &lt;em&gt;PolyMC Core Team&lt;/em&gt;.&lt;br /&gt;
 You can read more about it in &lt;a href=&quot;https://prismlauncher.org/news/new-maintainers/&quot;&gt;this blogpost&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We want to decouple this project from its controversial origins and start work on a powerful Minecraft launcher.&lt;br /&gt;
 While we are working on getting 1.1.0 out, check out our future plans:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Sneak peak of future plans&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sneak peek of future plans&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Rewrite of metadata generators, to make them easier to work with. See progress over on &lt;a href=&quot;https://github.com/PolyMC/polymorphosis&quot;&gt;PolyMC/polymorphosis&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Potential rewrite of the launch-mechanism for Minecraft. This will give future alternative launchers the tools to build their own. See progress over on &lt;a href=&quot;https://github.com/PolyMC/PolyMC/issues/167&quot;&gt;PolyMC/PolyMC#167&lt;/a&gt;&lt;/li&gt;
@@ -675,7 +675,7 @@ While we are working on getting 1.1.0 out, check out our future plans:&lt;/p&gt;
 		<link href="https://prismlauncher.org/news/mod-download/"/>
 		<updated>2022-02-07T00:00:00Z</updated>
 		<id>https://prismlauncher.org/news/mod-download/</id>
-		<content type="html">&lt;p&gt;Thanks to @timoreo it is now possible to download individual mods from both cursforge and modrinth this pull request is the first of many big changes coming to PolyMC.&lt;/p&gt;
+		<content type="html">&lt;p&gt;Thanks to @timoreo it is now possible to download individual mods from both curseforge and modrinth. This pull request is the first of many big changes coming to PolyMC.&lt;/p&gt;
 &lt;p&gt;Screenshots of the new feature:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/81902668/152801619-8d826540-2467-4973-9488-f6afcb7ba804.png&quot; alt=&quot;ModInstallBlack&quot; /&gt;&lt;br /&gt;
 &lt;img src=&quot;https://user-images.githubusercontent.com/81902668/152801625-e7ad87f7-464f-49a2-ab4f-116f592acec1.png&quot; alt=&quot;ModInstallWhite&quot; /&gt;&lt;/p&gt;
@@ -696,11 +696,11 @@ While we are working on getting 1.1.0 out, check out our future plans:&lt;/p&gt;
 &lt;p&gt;Thank you all for providing me a great community to work with. I pray for PolyMC to have a good future and for all of you to continue to do good for the Free Software community.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Quote in news: &lt;a href=&quot;https://discordapp.com/channels/923671181020766230/923672379144671263/939731859431100416&quot;&gt;Discord&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Swirl contributed a lot to PolyMC and we hope to see more contributions in the future.&lt;/p&gt;
+&lt;p&gt;Swirl contributed a lot to PolyMC, and we hope to see more contributions in the future.&lt;/p&gt;
 &lt;p&gt;In lighter news, congratulations to our new Core Team consisting of:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;LennyMcLennington&lt;/li&gt;
-&lt;li&gt;Scumplex&lt;/li&gt;
+&lt;li&gt;Scrumplex&lt;/li&gt;
 &lt;li&gt;timoreo&lt;/li&gt;
 &lt;li&gt;txtsd&lt;/li&gt;
 &lt;li&gt;dada513&lt;/li&gt;

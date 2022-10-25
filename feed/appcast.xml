@@ -11,12 +11,12 @@
         <link>https://prismlauncher.org/news/release-5.0/</link>
         <sparkle:version>5</sparkle:version>
         <description>
-            &lt;p&gt;Hi there,&lt;/p&gt;
-&lt;p&gt;we are bringing you &lt;s&gt;PolyMC&lt;/s&gt; Prism Launcher 5.0!&lt;br /&gt;
+            &lt;p&gt;Hi there!&lt;/p&gt;
+&lt;p&gt;We are bringing you &lt;s&gt;PolyMC&lt;/s&gt; Prism Launcher 5.0!&lt;br /&gt;
 This major release not only comes with a new versioning system, but also a new name!&lt;br /&gt;
 But why you ask?&lt;br /&gt;
 Well, stuff happened and we are going to talk about everything that went down in a future blog post.&lt;br /&gt;
-For now we want you to regain access to the best Minecraft launcher out there.&lt;/p&gt;
+For now, we want you to regain access to the best Minecraft launcher out there.&lt;/p&gt;
 &lt;p&gt;Let&#39;s go over the major changes since the last &lt;em&gt;PolyMC&lt;/em&gt; release back in September.&lt;br /&gt;
 Our macOS users on Apple M1/M2 processors as well as our Nintendo Switch Linuxers can rejoice, as you can finally run all Minecraft versions on those platforms without needing to make any changes on your end.&lt;br /&gt;
 We have to thank &lt;a href=&quot;https://github.com/r58playz/&quot;&gt;some&lt;/a&gt; &lt;a href=&quot;https://github.com/theofficialgman/&quot;&gt;community&lt;/a&gt; &lt;a href=&quot;https://github.com/ViRb3&quot;&gt;members&lt;/a&gt; as well as the folks over at &lt;a href=&quot;https://github.com/MinecraftMachina/&quot;&gt;MinecraftMachina&lt;/a&gt; for helping out with this feature!&lt;/p&gt;
@@ -119,7 +119,7 @@ With this wonderful new version you get many cool things, like bug fixes and als
 &lt;li&gt;Bump to C++17 by @Scrumplex and @LennyMcLennington in #941&lt;/li&gt;
 &lt;li&gt;Hide &#39;More news...&#39; button if the news aren&#39;t loaded yet by @flowln in #1049&lt;/li&gt;
 &lt;li&gt;Make &#39;About&#39; dialog smaller by @DioEgizio in #1107&lt;/li&gt;
-&lt;li&gt;Make Coremods / Mods seperation more clear by @Scrumplex in #1035&lt;/li&gt;
+&lt;li&gt;Make Coremods / Mods separation more clear by @Scrumplex in #1035&lt;/li&gt;
 &lt;li&gt;Update copyright notices by @DioEgizio in #1073&lt;/li&gt;
 &lt;li&gt;[macOS] Downgrade to Qt 6.3.0 by @DioEgizio in #1014&lt;/li&gt;
 &lt;/ul&gt;
@@ -171,7 +171,7 @@ This update should fix some of the issues you might have faced with 1.4.0.&lt;/p
 &lt;ul&gt;
 &lt;li&gt;Fix crash when JAR-mods are applied by @flowln in #956&lt;/li&gt;
 &lt;li&gt;Fix filter on resources pages (e.g. Mods page) by @flowln in #961&lt;/li&gt;
-&lt;li&gt;Fix variables in pre launch/post exit hooks by @Scrumplex in #952&lt;/li&gt;
+&lt;li&gt;Fix variables in pre-launch/post-exit hooks by @Scrumplex in #952&lt;/li&gt;
 &lt;li&gt;Make adding multiple accounts possible again by @flowln in #974&lt;/li&gt;
 &lt;li&gt;Resolve CurseForge mods for FTB modpacks by @flowln and @Scrumplex in #699&lt;/li&gt;
 &lt;/ul&gt;
